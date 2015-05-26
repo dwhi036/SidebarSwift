@@ -13,6 +13,12 @@
 		F6598A601B0C3C82002E4EAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6598A5F1B0C3C82002E4EAA /* Images.xcassets */; };
 		F6598A631B0C3C82002E4EAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6598A611B0C3C82002E4EAA /* LaunchScreen.xib */; };
 		F6598A6F1B0C3C82002E4EAA /* SidebarSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6598A6E1B0C3C82002E4EAA /* SidebarSwiftTests.swift */; };
+		F6598A7E1B0C3CB0002E4EAA /* menuChat.png in Resources */ = {isa = PBXBuildFile; fileRef = F6598A791B0C3CB0002E4EAA /* menuChat.png */; };
+		F6598A7F1B0C3CB0002E4EAA /* menuClose.png in Resources */ = {isa = PBXBuildFile; fileRef = F6598A7A1B0C3CB0002E4EAA /* menuClose.png */; };
+		F6598A801B0C3CB0002E4EAA /* menuMap.png in Resources */ = {isa = PBXBuildFile; fileRef = F6598A7B1B0C3CB0002E4EAA /* menuMap.png */; };
+		F6598A811B0C3CB0002E4EAA /* menuUsers.png in Resources */ = {isa = PBXBuildFile; fileRef = F6598A7C1B0C3CB0002E4EAA /* menuUsers.png */; };
+		F6598A821B0C3CB0002E4EAA /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6598A7D1B0C3CB0002E4EAA /* menuIcon.png */; };
+		F6AB77F01B14D74300D786B0 /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB77EF1B14D74300D786B0 /* SideBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		F6598A681B0C3C82002E4EAA /* SidebarSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SidebarSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6598A6D1B0C3C82002E4EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6598A6E1B0C3C82002E4EAA /* SidebarSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarSwiftTests.swift; sourceTree = "<group>"; };
+		F6598A791B0C3CB0002E4EAA /* menuChat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuChat.png; sourceTree = "<group>"; };
+		F6598A7A1B0C3CB0002E4EAA /* menuClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuClose.png; sourceTree = "<group>"; };
+		F6598A7B1B0C3CB0002E4EAA /* menuMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuMap.png; sourceTree = "<group>"; };
+		F6598A7C1B0C3CB0002E4EAA /* menuUsers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuUsers.png; sourceTree = "<group>"; };
+		F6598A7D1B0C3CB0002E4EAA /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
+		F6AB77EF1B14D74300D786B0 /* SideBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +89,10 @@
 		F6598A551B0C3C82002E4EAA /* SidebarSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F6598A831B0C3CBD002E4EAA /* sidebar */,
+				F6598A781B0C3C95002E4EAA /* icons */,
 				F6598A581B0C3C82002E4EAA /* AppDelegate.swift */,
+				F6AB77EF1B14D74300D786B0 /* SideBarController.swift */,
 				F6598A5A1B0C3C82002E4EAA /* ViewController.swift */,
 				F6598A5C1B0C3C82002E4EAA /* Main.storyboard */,
 				F6598A5F1B0C3C82002E4EAA /* Images.xcassets */,
@@ -110,6 +125,25 @@
 				F6598A6D1B0C3C82002E4EAA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6598A781B0C3C95002E4EAA /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				F6598A791B0C3CB0002E4EAA /* menuChat.png */,
+				F6598A7A1B0C3CB0002E4EAA /* menuClose.png */,
+				F6598A7B1B0C3CB0002E4EAA /* menuMap.png */,
+				F6598A7C1B0C3CB0002E4EAA /* menuUsers.png */,
+				F6598A7D1B0C3CB0002E4EAA /* menuIcon.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		F6598A831B0C3CBD002E4EAA /* sidebar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sidebar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +226,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6598A7E1B0C3CB0002E4EAA /* menuChat.png in Resources */,
+				F6598A801B0C3CB0002E4EAA /* menuMap.png in Resources */,
 				F6598A5E1B0C3C82002E4EAA /* Main.storyboard in Resources */,
 				F6598A631B0C3C82002E4EAA /* LaunchScreen.xib in Resources */,
+				F6598A7F1B0C3CB0002E4EAA /* menuClose.png in Resources */,
+				F6598A821B0C3CB0002E4EAA /* menuIcon.png in Resources */,
 				F6598A601B0C3C82002E4EAA /* Images.xcassets in Resources */,
+				F6598A811B0C3CB0002E4EAA /* menuUsers.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +253,7 @@
 			files = (
 				F6598A5B1B0C3C82002E4EAA /* ViewController.swift in Sources */,
 				F6598A591B0C3C82002E4EAA /* AppDelegate.swift in Sources */,
+				F6AB77F01B14D74300D786B0 /* SideBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +449,7 @@
 				F6598A741B0C3C82002E4EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6598A751B0C3C82002E4EAA /* Build configuration list for PBXNativeTarget "SidebarSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +458,7 @@
 				F6598A771B0C3C82002E4EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
