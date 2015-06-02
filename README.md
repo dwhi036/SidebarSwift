@@ -1,6 +1,6 @@
 # SidebarSwift
 Swift Implementation of CDSideBar for Hamburger Menu Style 
-Original was written by Christophe Dellac on 9/11/14 in ObjectiveC
+Original was written by Christopher Dellac on 9/11/14 in Objective-C
 
 SideBarController is a light and easy side bar with custom iOS7 animations and actions
 
@@ -25,15 +25,13 @@ Implement This Method to detect Menu Items Tapped
 In viewDidLoad, create an array of menu images 
 Create your instance of SideBarController and setup ViewController as delegate
 
-override func viewDidLoad() {
+ override func viewDidLoad() {
         super.viewDidLoad()
-
         var imageList = [UIImage(named: "menuChat")!,UIImage(named: "menuUsers")!, UIImage(named: "menuMap")!, UIImage(named: "menuClose")!]
-        
         sideBar = SideBarController(images: imageList)
         sideBar?.delegate = self
-        
-}
+ }
+ 
 
 To get the SideBar to Appear Invoke Method
 
