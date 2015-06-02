@@ -28,7 +28,10 @@ class ViewController: UIViewController, SidebarControllerDelegate {
         super.viewDidAppear(animated)
         var appWindow = UIApplication.sharedApplication().delegate?.window!
        
-        sideBar?.insertMenuButtonOnView(self.view, position: CGPointMake(CGFloat(self.view.frame.size.width - 70), CGFloat(50)))
+        // Position Menu Button on Left Side
+        
+        sideBar?.insertMenuButtonOnView(appWindow!, menuPosition:Direction.Left)
+        
     }
     
     

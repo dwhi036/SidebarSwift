@@ -26,6 +26,7 @@
                             <constraint firstAttribute="height" secondItem="wSy-R7-gbB" secondAttribute="height" id="BD3-vc-KKw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Uv1-Jf-plB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
